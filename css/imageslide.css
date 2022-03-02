@@ -1,0 +1,52 @@
+
+.container-slide{
+    z-index: 10;
+    display: flex;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: .4s ease-in-out;
+}
+img{
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    object-fit: cover;
+/*     margin-left: 7px; */
+}
+#right{
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: black;
+    background: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+}
+#left{
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: black;
+    background: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+}

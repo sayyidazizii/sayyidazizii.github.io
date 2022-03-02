@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/slider.css" rel="stylesheet" />
     </head>
        <!-- Masthead-->
        <style>
@@ -79,6 +80,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html"><i class="uil uil-estate"></i>Beranda</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html"><i class="uil uil-chat-bubble-user"></i>Portofolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="sertifikasi.html"><i class="uil uil-image"></i>Sertifikat</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="blog.html"><i class="uil uil-monitor-heart-rate"></i>Blog</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="gallery.html"><i class="uil uil-images"></i>Gallery</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contact.html"><i class="uil uil-envelope"></i>Contact</a></li>
@@ -108,6 +110,9 @@
             </div>
             <!-- Masthead Subheading-->
             <p class="masthead-subheading font-weight-light mb-0">Graphic Design - Web Designer - Junior Web Dev</p>
+            <div class="text-center mt-3">
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#menu">Menu</button>
+            </div>
         </div>
     </header>
 
@@ -115,7 +120,7 @@
     <section class="page-section bg-white text-secondary mb-0" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Welcome</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Artikel</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-secondary">
                 <div class="divider-custom-line"></div>
@@ -123,16 +128,58 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-            </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-secondary" href="/profil">
-                    Lihat Profil
-                </a>
-            </div>
+            <div class="container">
+                <div class="card">
+                    <input type="radio" name="select" id="slide_1" checked>
+                    <input type="radio" name="select" id="slide_2">
+                    <input type="radio" name="select" id="slide_3">
+                    <input type="checkbox" id="slideImg">
+                  
+                    <div class="slider">
+                      <label for="slide_1" class="slide slide_1"></label>
+                      <label for="slide_2" class="slide slide_2"></label>
+                      <label for="slide_3" class="slide slide_3"></label>
+                    </div>
+                  
+                    <div class="inner_part">
+                      <label for="slideImg" class="img">
+                        <img class="img_1" src="assets/img/blog/hobbi-logo.png">
+                      </label>
+                      <div class="content content_1">
+                        <div class="title">Hobi</div>
+                        <div class="text">
+                          Istanbul, a fascinating city built on two Continents, divided by the Bosphorus Strait. This is one of the greatest cities in the world.
+                        </div>
+                        <button>Read More</button>
+                      </div>
+                    </div>
+                  
+                    <div class="inner_part">
+                      <label for="slideImg" class="img">
+                        <img class="img_2" src="assets/img/blog/webdev.png">
+                      </label>
+                      <div class="content content_2">
+                        <div class="title">Pemrograman Web</div>
+                        <div class="text">
+                          Ankara is Turkey's beating heart, second largest city, located in the Central Anatolia region and home to the Grand National Assembly of Turkey.
+                        </div>
+                        <button>Read More</button>
+                      </div>
+                    </div>
+                  
+                    <div class="inner_part">
+                      <label for="slideImg" class="img">
+                        <img class="img_3" src="assets/img/blog/html-logo.png">
+                      </label>
+                      <div class="content content_3">
+                        <div class="title">Bahasa Pemrograman</div>
+                        <div class="text">Located on the shores of the Aegean Sea, west of the Anatolian Peninsula, İzmir is the third-largest city in Turkey.
+                        </div>
+                        <button>Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
     </section>  
      <!-- Footer-->
@@ -151,10 +198,10 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-telegram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://web.facebook.com/sayyid.aziz.12/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://t.me/SayyidAzizyz"><i class="fab fa-fw fa-telegram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/sayyid-syafiq-52aaaa220/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/sayyidazizii/"><i class="fab fa-fw fa-instagram"></i></a>
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
@@ -164,7 +211,7 @@
                         .
                     </p>
                     <p class="lead mb-0"> 
-                        <a href="/kontak">Contact</a>
+                        <a href="contact.html">Contact</a>
                         .
                     </p>
                 </div>
@@ -173,9 +220,59 @@
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; SAY-ID 2021</small> 
+        <div class="container"><small>Copyright &copy; SAY-ID 2022</small> 
             <span> </span> 
-            <small style="color:salmon">laravel 8</small> </div>
+            <small style="color:salmon">StartBootstrap</small> </div>
+    </div>
+
+
+
+    <!-- modal -->
+    <div class="portfolio-modal modal fade" id="menu" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Menu</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="container">
+                                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                                      <div class="col">
+                                        <a href="portfolio.html" class="p-3 btn btn-secondary">Portfolio</a>
+                                      </div>
+                                      <div class="col">
+                                        <a href="sertifikasi.html" class="p-3  btn btn-secondary">Sertifikasi</a>
+                                      </div>
+                                      <div class="col">
+                                        <a href="blog.html" class="p-3  btn btn-secondary">Artikel</a>
+                                      </div>
+                                      <div class="col">
+                                        <a href="gallery.html" class="p-3 btn btn-secondary">Gallery</a>
+                                      </div>
+                                      <div class="col">
+                                        <a href="contact.html" class="p-3  btn btn-secondary">contact</a>
+                                      </div>
+                                      <div class="col">
+                                        <a href="profil.html" class="p-3  btn btn-secondary">Profil</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
             <!-- Bootstrap core JS-->
