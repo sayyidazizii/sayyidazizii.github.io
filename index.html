@@ -1,239 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MW3BVQ2');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <meta property="og:locale" content="pt-BR">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Sayyid Aziz | Personal Portfolio">
+  <meta property="og:site_name" content="Sayyid Aziz | Personal Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Here you can get all links to my social networks and personal informations.">
+  <meta property="og:image" content="https://github.com/Lucas-Angelo.png" />
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta name="google-site-verification" content="NB2AxCBdxkHWO3A4SCAQHOphpddd7DgOlJjuiVwGu6k"/>
 
-        <title>Sayyid Aziz</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Sayyid Aziz</a>
-                </div>
+  <title>Sayyid Aziz - Personal Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#stack" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                         <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="watermelon/watermelon.html" class="nav__link">watermelon</a></li>
-                    </ul>
-                </div>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi 👋,<br>I'am <span class="home__title-color">Sayyid Aziz</span><br> Full Stack </h1>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main/style.css" rel="stylesheet">
 
-                    <a href="#" class="button">Contact</a>
-                </div>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/sayyid-syafiq-52aaaa220/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/sayyidazizii/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/sayyidazizii" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCYLCCZLPT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
-                            <img class="home__blob-img" x="50" y="60" style="border-radius: 50%;" src="assets/img/profil.jpeg"/>
-                    </svg>
-                </div>
-            </section>
+    gtag('config', 'G-TCYLCCZLPT');
+  </script>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+  <!-- =======================================================
+  * Template Name: Personal - v2.1.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I am Sayyid Syafiq Abdul Aziz</h2>
-                        <p class="about__text">" I graduated from majoring in Software Engineering with a specialization in software development.I am take online learning classes to improve my skill. Looking for job opportunities that provide opportunities for further development.”</p>           
-                    </div>                                   
-                </div>
-            </section>
+<body>
 
-            <!--===== SKILLS =====-->
-            <center>
-                <section id="stack" class="stack">
-                    <h2 class="section-title">Tech Stack</h2>
-                    <div class="stack-container">
-                        <table>
-                            <tr>
-                                <td>  <div class="tech-container">
-                            <i class="devicon-html5-plain colored"></i>
-                            HTML
-                        </div></td>
-                                <td> <div class="tech-container">
-                            <i class="devicon-css3-plain colored"></i>
-                            CSS
-                        </div></td>
-                                <td><div class="tech-container">
-                            <i class="devicon-javascript-plain colored"></i>
-                            JavaScript
-                        </div></td>
-                            </tr>
-                            <tr>
-                                <td><div class="tech-container">
-            
-                            <i class="devicon-php-plain colored"></i>
-            
-                            Php
-                        </div></td>
-                                <td> <div class="tech-container">
-                            <i class="devicon-codeigniter-plain colored"></i>
-                            Codeigniter
-                        </div></td>
-                                <td><div class="tech-container">
-                                    <i class="devicon-laravel-plain colored"></i>
-                                    Laravel
-                                </div></td>
-                            </tr>
-                            <tr>
-                                <td><div class="tech-container">
-                                    <i class="devicon-csharp-plain colored"></i>
-                                    C#
-                                </div></td>
-                                <td><div class="tech-container">
-                            
-                                    <i class="devicon-java-plain-wordmark colored"></i>
-                                    
-                                    
-                                    Java
-                                </div></td>
-                                <td><div class="tech-container">
-            
-                                    <i class="devicon-mysql-plain colored"></i>
-                    
-                    
-                                    Mysql
-                                </div></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><div class="tech-container">
-                                    <i class="devicon-github-plain"></i>
-                                    Github
-                                </div></td>
-                                <td></td>
-                            </tr>
-                        </table>
-            
-                    </div>
-                </section>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW3BVQ2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+
+    <div class="container">
+
+      <h1><a href="index.html">Sayyid Aziz</a></h1>
+      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#education"> <span>Education</span></a></li>
+          <li><a href="#experience"> <span>Experience</span></a></li>
+          <!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
+          <li><a href="#portfolio"> <span>Projects</span></a></li>
+          <li><a href="#skills"> <span>Skills</span></a></li>
+          <li><a href="https://www.cakeresume.com/sayyid-syafiq-abdul-aziz"
+              target="_blank"> <span>Resume</span></a></li>
+          <li><a href="#links" target="_blank"> <span>Links</span></a></li>
+          <li><a href="#contacts"> <span>Contact</span></a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sayyid-aziz-52aaaa220/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://www.github.com/sayyidazizii" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:sayyidsyafiq234@gmail.com" target="_blank" class="google"><i class="bx bx-mail-send"></i></a>
+        <a href="https://www.instagram.com/sayyidazizii" target="_blank" class="github"><i class="bx bxl-instagram"></i></a>
+
+      </div>
+
+    </div>
     
-                <!--===== WORK =====-->
-                <section class="work section" id="work">
-                    <h2 class="section-title">Portfolio</h2>
-    
-                    <div class="work__container bd-grid">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work1.png" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work2.png" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work3.png" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work4.png" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work5.png" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work6.png" alt="">
-                        </a>
-                    </div>
-                </section>
-            </center>
-            
+  </header><!-- End Header -->
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="experience">
-                <h2 class="section-title">Experience</h2>
-                <!-- <table style="width:100%"> -->
-                    <tr>
-                        <td><div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                                <img src="assets/img/kku.jpg" alt="">
-                                <span class="skills__name">Kusuma Kreasi Utama (intern) <br> Des 2021 - Feb 2022</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage"></span>
-                            </div>
-                        </div></td>
-                        <td><div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/img/sass.png" alt="">
-                                <span class="skills__name"> <span class="skills__name"> SASS<br> Jun 2022 - Jun 2023</span></span>
-                            </div>
-                            <div class="skills__bar skills__html">
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
 
-                            </div>
-                            <div>
-                            </div>
-                        </div></td>
-                        <td><div class="skills__data">
-                            <div class="skills__names">
-                                <img src="assets/img/cipta.jpg" alt="">
-                                <span class="skills__name"> <span class="skills__name"> CiptaSolutindoTech<br> Jun 2023 - Now</span></span>
-                            </div>
-                            <div class="skills__bar skills__html">
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
 
-                            </div>
-                            <div>
-                            </div>
-                        </div></td>
-                    </tr>
-                </table>
-                        
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer id="footer" class="footer">
-            <p class="footer__title">SayyidAziz</p>
-            <div class="footer__social">
-                <a href="https://wa.me/6285602678871" class="footer__icon"> <i class="bx bxl-whatsapp"></i></a>
-                <a href="mailto:sayyidsyafiq234@gmail.com" class="footer__icon"><i class='bx bx-mail-send' ></i></a>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="./assets/img/profile.jpeg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <p>
+            Software engineer with 2 years of experience in web and mobile application development.
+          </p>
+          <p>
+            I started in the development field at 17 years old when I study in High Scool and deepened my knowledge to
+            levels I never imagined! Based on feedback from people close to me, I consider myself extremely proactive,
+            dedicated, hardworking, responsible and passionate about learning everything about the IT field.
+          </p>
+          <p>
+            About my backend technical knowledge, I have academic experience in developing web applications using PHP and Javascript. I've also developed professional web applications for real clients
+            using Laravel with React JS frameworks.
+          </p>
+          <p>
+            As for my knowledge of frontend technologies, I have academic and professional experiences using the basics
+            of HTML, CSS and JavaScript.
+          </p>
+          <p>
+            My soft skills are well developed, I worked as Scrum Master, technical leader and developer in three
+            academic projects and one extension project. I consider myself communicative, organized, responsible,
+            studious and proactive.
+          </p>
+          <p>
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 22 Mar 2004</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +62 856-0267-8871</li>
+              </ul>
             </div>
-            <p class="footer__copy">Make with  ❤️ &#169; sayyidazizii. All rigths reserved</p>
-        </footer>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Karangamyar City, Central Java. IDN.</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sayyidsyafiq234@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-code-box-line" style="color: #ffbb2c;"></i>
+            <h3>Software Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-settings-2-fill" style="color: #5578ff;"></i>
+            <h3>Backend Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-window-fill" style="color: #e80368;"></i>
+            <h3>Web Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-smartphone-line" style="color: #1c7d32;"></i>
+            <h3>Mobile Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
+            <h3>Software Engineering</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #f1081f;"></i>
+            <h3>Database</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
+            <h3>Algorithms</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-cloud-fill" style="color: #ffc107;"></i>
+            <h3>Cloud</h3>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+  </section><!-- End About Section -->
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+  <!-- ======= Education Section ======= -->
+  <section id="education" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+
+          <div class="col-md-4 mt-4 mt-md-0 ml-0 icon-box p-2" data-aos="fade-up" data-aos-delay="100"
+            style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
+            <a href="https://smkn2kra-website.vercel.app/" target="_blank"><img src="assets/img/education/smk.png"
+                class="img-fluid" alt="PucMinas"></a>
+            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>B.Tech. in Software Engineering</em></p>
+            <h5 style="text-align:left;padding: 0px 10px;">Juni 2019 - Juni 2022</h5>
+            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Student</h6>
+            <ul style="text-align:left;color:#fff;">
+              <li>Algorithms and Data Structure</li>
+              <li>Modular Programming</li>
+              <li>Database</li>
+              <li>Web, mobile and backend development.</li>
+              <li>Systems design, architecture and modeling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Online Certification</h2>
+        </div>
+
+        <div class="row portfolio-container" style="position: relative; height: 437.75px;">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/web.png" class="img-fluid" alt="Cisco">
+              <div class="portfolio-info">
+                <h4>Web Begginner</h4>
+                <div class="portfolio-links">
+                  <a href="" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 370px; top: 0px;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/js.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Learn-A-Javascript</h4>
+                <div class="portfolio-links">
+                  <a href="" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 740px; top: 0px;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/C.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>C</h4>
+                <div class="portfolio-links">
+                  <a href="" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project"
+            style="position: absolute; left: 370px; top: 218.875px;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/aws.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>AWS</h4>
+                <div class="portfolio-links">
+                  <a href="" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project"
+            style="position: absolute; left: 740px; top: 218.875px;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/sololearn.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>C #</h4>
+                <div class="portfolio-links">
+                  <a href="" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Education Section -->
+
+
+
+  <!-- Start Experience Section -->
+
+  <section id="experience" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="" target="_blank"
+                style="color:#12d640">CiptaSolutindoTech</a><br> </h4>
+            <h5 style="text-align:left;">Jun 2023 - Present</h5>
+            <p style="text-align:left;color:#fff"><em>Fullstack Developer</em></p>
+            <ul style="text-align:left;">
+              <li>Fullstack developer program using PHP and JavaScript language with Laravel Framework.</li>
+            </ul>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="" target="_blank"
+                style="color:#12d640">SASS</a><br> </h4>
+            <h5 style="text-align:left;">Jun 2022 - Jun 2023</h5>
+            <p style="text-align:left;color:#fff"><em>Information Technology Staff</em></p>
+            <ul style="text-align:left;">
+              <li>Work done in the monitoring, management and administration of IAAS Cloud Servers sector.
+                I work configuring scripts for monitoring virtual and physical servers, devices, platforms and software
+                that need to be observed and analyzed so that the company's entire digital environment is online and
+                stable.</li>
+              <li>The languages ​​I use are C#, Shell Script and MRL (Master Rule Language).</li>
+              <li>My service is to automate the monitoring of software and hardware, using monitoring agents from market
+                tools such as BMC TrueSight,
+                automating the sending of reports of the most recurrent events, monitoring user experience (one of the
+                technologies used are synthetic
+                monitoring agents). With this, those responsible for taking care of the events are alerted whenever a
+                problem occurs.</li>
+            </ul>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="" target="_blank" target="_blank"
+                style="color:#12d640">Kusuma Kreasi Utama</a><br> </h4>
+            <h5 style="text-align:left;">Dec 2021 - Feb 2022</h5>
+            <p style="text-align:left;color:#fff"><em>Web Developer Intern</em></p>
+            <ul style="text-align:left;">
+              <li>I was build project Company Profile And Sistem Information Using Laravel </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Experience Section -->
+
+
+
+  <!-- Start Project Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Web-App</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center>
+            <h4>Car repair shop</h4>
+          </center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/work3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+
+              <div class="portfolio-links">
+                <a href="" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
+                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center>
+            <h4>Coffee Shop</h4>
+          </center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/work5.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+
+              <div class="portfolio-links">
+                <a href="projects/parkio.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox"
+                  title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center>
+            <h4>Scholl Blog CMS</h4>
+          </center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/work6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+
+              <div class="portfolio-links">
+                <a href="projects/projectcit.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
+                  class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- End Project Section -->
+
+
+
+  <!-- Start Skills Section -->
+
+  <section id="skills" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+            style="background:#fff; border-radius: 8px;">
+            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="upload.wikimedia.org" height="60"
+                width="90">
+              <img src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
+                alt="upload.wikimedia.org" height="60" width="90">
+              <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50"
+                width="120">
+              <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg"
+                alt="upload.wikimedia.org" height="60" width="90">
+              <img src="https://www.vectorlogo.zone/logos/php/php-ar21.svg" alt="upload.wikimedia.org" height="60"
+                width="90">
+              <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-ar21.svg" alt="upload.wikimedia.org"
+                height="60" width="90">
+              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70"
+                width="130">
+              <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone"
+                height="50" width="190">
+
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
+            style="background:#fff; border-radius: 8px;">
+            <h4 style="text-align:left;color:#09203a">Frameworks</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg" alt="vectorlogo.zone">
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100"
+            style="background:#fff; border-radius: 8px;">
+            <h4 style="text-align:left;color:#09203a">Tools</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg"
+                alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
+              <img src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg" alt="vectorlogo.zone">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Skills Section -->
+
+
+  <!-- Start Links Section -->
+
+  <section id="links" class="services">
+  <div id="container">
+    <a class="profile_link" href="" target="_blank" rel="noopener noreferrer">
+      <img class="profile" src="assets/img/profil.jpeg" alt="Profile">
+    </a>
+
+    <div class="links-container">
+      <strong class="description">Getting in touch! 👋</strong>
+      <a class="link" href="https://github.com/sayyidazizii" target="_blank">
+        <img class="logo" src="./assets/img/links/github.svg" alt="GitHub Logo">
+        GitHub
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/sayyid-aziz-52aaaa220/" target="_blank">
+        <img class="logo" src="./assets/img/links/linkedin.svg" alt="Linkedin Logo">
+        Linkedin
+      </a>
+      <a class="link" href="https://www.instagram.com/sayyidazizii" target="_blank">
+        <img class="logo" src="./assets/img/links/instagram.svg" alt="Instagram Logo">
+        Instagram
+      </a>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- End Links Section -->
+
+
+  <!-- Start Contact Section -->
+
+  <section id="contacts" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Karanganyar City</p>
+            <p>Central Java</p>
+            <p>Indonesia</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/sayyid-aziz-52aaaa220/" target="_blank" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
+              <a href="https://www.github.com/sayyidazizii" target="_blank" class="github"><i
+                  class="bx bxl-github"></i></a>
+              <a href="mailto:sayyidsyafiq234@gmail.com" target="_blank" class="google"><i class="bx bx-mail-send"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>sayyidsyafiq234@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Contact</h3>
+            <p>+62 856-0267-8871</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing', {
+      strings: ["Software engineer", "Coder", "Fullstack developer"],
+      loop: true,
+      typeSpeed: 65,
+      backSpeed: 65
+    });
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
