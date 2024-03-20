@@ -1,1 +1,0 @@
-# sayyidazizii.github.io
