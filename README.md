@@ -2,7 +2,6 @@
 
 <div align="center">
 <a href="https://sayyiazizii.github.com/">
-<img src="./public/foto.jpeg">
 </a>
 <p></p>
 </div>
