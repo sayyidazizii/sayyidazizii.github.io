@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20"
+          node-version: "20" # Update to Node.js version 20
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
