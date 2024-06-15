@@ -24,9 +24,6 @@ jobs:
           package_json_file: "./package.json"
           dest: "~/setup-pnpm"
 
-      - name: Clear pnpm cache
-        run: pnpm cache clear --force
-
       - name: Install dependencies
         run: pnpm install
 
