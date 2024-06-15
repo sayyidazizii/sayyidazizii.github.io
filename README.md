@@ -1,4 +1,4 @@
-# 👨🏻‍💻 Porfolio para programadores y desarrolladores
+
 
 <div align="center">
 <a href="https://sayyiazizii.github.io/">
@@ -16,7 +16,5 @@
 ![GitHub issues](https://img.shields.io/github/issues/midudev/porfolio.dev)
 
 </div>
-
-## 🫂 Contribuidores
 
 <p></p>
