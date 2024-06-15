@@ -20,14 +20,18 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: "6.16.0" # Ganti dengan versi pnpm yang Anda inginkan
+          version: "6.16.0" # Adjust to the version of pnpm you are using
           package_json_file: "./package.json"
           dest: "~/setup-pnpm"
 
-      - name: Install dependencies and build
-        run: |
-          pnpm install
-          pnpm run build
+      - name: Clear pnpm cache
+        run: pnpm cache clear --force
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build your site
+        run: pnpm run build
 
   deploy:
     needs: build
