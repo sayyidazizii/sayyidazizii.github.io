@@ -1,13 +1,15 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+
+// Data pengalaman
 const EXPERIENCIE = [
   {
-    date: "Jun 2023 -  Present",
+    date: "Jun 2023 - Present",
     title: "Fullstack Developer",
     company: "Cipta Solutindo Tech",
     description: "FullStack Developer, building web-based software using Laravel, CodeIgniter, React JS, and creating APIs",
     link: "https://www.ciptasolutindo.id/",
-    logo: "cipta.jpg"  // Add the logo URL here
+    logo: "cipta.jpg"
   },
   {
     date: "Jun 2022 - Jun 2023",
@@ -15,7 +17,7 @@ const EXPERIENCIE = [
     company: "SAS",
     description: "Develop Desktop Application base C# , Laravel, Epicor ERP , Maintenance, Hardware Support",
     link: "https://www.sas-autoparts.com/",
-    logo: "sas.jpg"  // Add the logo URL here
+    logo: "sas.jpg"
   },
   {
     date: "Des 2021 - Feb 2022",
@@ -23,18 +25,124 @@ const EXPERIENCIE = [
     company: "Kusuma Kreasi Utama",
     description: "Build Website with Laravel",
     link: "https://eventkampus.com/vendor/121/kusuma-kreasi-utama",
-    logo: "kku.jpeg"  // Add the logo URL here
-  },
-]
+    logo: "kku.jpeg"
+  }
+];
 
----
-
-<ol class="relative mt-16">
+// Data komunitas
+const COMMUNITY = [
   {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
+    name: "UKM IT UT SKA",
+    logo: "itska.png",
+    link: "https://www.instagram.com/itutsurakarta/"
+  },
+  {
+    name: "Koperasi Cipta",
+    logo: "cbs.png",
+    link: "https://ciptapro.id/ciptaberkahsinergi/"
+  },
+  {
+    name: "Invictus Wave",
+    logo: "invictus.png",
+    link: "https://www.instagram.com/invictus.wave/"
+  },
+  {
+    name: "Google Developer",
+    logo: "gdg.png",
+    link: "https://gdg.community.dev/gdg-semarang/"
+  },
+  {
+    name: "Karate Karanganyar",
+    logo: "kkc.png",
+    link: "https://www.instagram.com/karanganyar.karateclub/"
+  },
+  {
+    name: "Skandakra Dev",
+    logo: "skandakra.png",
+    link: "https://www.instagram.com/rplskandakra.dev/"
+  }
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengalaman dan Komunitas</title>
+  <style>
+    .experience-item {
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 1rem;
+    }
+    .community-slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    .slider-container {
+      display: flex;
+      width: 100%;
+      max-width: 800px; /* Maksimum lebar untuk slider */
+      overflow: hidden;
+      position: relative;
+    }
+    .slider {
+      display: flex;
+      width: calc(100% * 2); /* Lebar slider yang 2x dari container untuk loop */
+      animation: slide 10s linear infinite; /* Animasi sliding */
+    }
+    .community-item {
+      flex: 0 0 auto; /* Memungkinkan item untuk memiliki lebar tetap */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px; /* Jarak antar item */
+    }
+    .community-logo {
+      width: 80px; /* Set width to 80px for small size */
+      height: 80px; /* Set height to 80px for small size */
+      object-fit: cover; /* Ensure image keeps its aspect ratio */
+      border-radius: 50%; /* Make image circular */
+      border: 2px solid #eaeaea; /* Optional: border for better visibility */
+    }
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <ol class="relative mt-16">
+    {EXPERIENCIE.map((experiencie) => (
+      <li>
         <ExperienceItem {...experiencie} />
       </li>
-    ))
-  }
-</ol>
+    ))}
+  </ol>
+
+  <div class="community-slider mt-16">
+    <h2 class="text-center text-2xl font-bold mb-4">Community</h2>
+    <div class="slider-container">
+      <div class="slider" id="community-slider">
+        {/* Menyusun dua set gambar untuk efek looping */}
+        {COMMUNITY.map((community, index) => (
+          <a href={community.link} id={`community-${index}`} class="community-item">
+            <img src={community.logo} alt={community.name} class="community-logo" />
+          </a>
+        ))}
+        {COMMUNITY.map((community, index) => (
+          <a href={community.link} id={`community-${index}-copy`} class="community-item">
+            <img src={community.logo} alt={community.name} class="community-logo" />
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

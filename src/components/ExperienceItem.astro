@@ -7,20 +7,18 @@ interface Props {
   description: string
   link?: string
   date: string
-  logo?: string  // Add the logo property
+  logo?: string
 }
 
 const { title, company, description, link, date, logo } = Astro.props
 ---
 
-<div
-  class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
->
+<div class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4">
   <div class="relative pb-12 md:col-span-2">
     <div class="sticky top-0">
       <span class="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">&bull;</span>
       {logo && (
-        <img src={logo} alt={`${company} logo`} class="h-10 w-10 object-contain mb-2 rounded-md" />  // Add the 'rounded-full' class for border-radius
+        <img src={logo} alt={`${company} logo`} class="h-10 w-10 object-contain mb-2 rounded-md" />
       )}
       <h3 class="text-xl font-bold text-yellow-400">{title}</h3>
       <h4 class="font-semibold text-xl text-gray-600 dark:text-white">{company}</h4>
@@ -44,10 +42,8 @@ const { title, company, description, link, date, logo } = Astro.props
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 6l6 6l-6 6" />
-          </>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 6l6 6l-6 6" />
         </svg>
       </LinkInline>
     )}
