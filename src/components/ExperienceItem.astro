@@ -27,7 +27,7 @@ const { title, company, description, link, date, logo } = Astro.props
   </div>
   <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
     {description}
-    {link && (
+    <!-- {link && (
       <LinkInline href={link}>
         view
         <svg
@@ -46,6 +46,6 @@ const { title, company, description, link, date, logo } = Astro.props
           <path d="M9 6l6 6l-6 6" />
         </svg>
       </LinkInline>
-    )}
+    )} -->
   </div>
 </div>
