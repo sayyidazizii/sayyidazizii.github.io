@@ -20,6 +20,15 @@ import Hero from "@/components/Hero.astro"
       <Hero>
       </slot>
     </Hero>
+    
+    <SectionContainer id="about-me">
+      <h2
+        class="flex items-center mb-8 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+
     </SectionContainer>
     <div class="space-y-24">
     <SectionContainer id="experiencia">
@@ -40,16 +49,6 @@ import Hero from "@/components/Hero.astro"
       Portfolio 
       </h2>
       <Projects />
-    </SectionContainer>
-
-    <SectionContainer id="about-me">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
-        <ProfileCheck class="size-8" />
-        About Me
-      </h2>
-      <AboutMe />
     </SectionContainer>
   </div>
   </main>
