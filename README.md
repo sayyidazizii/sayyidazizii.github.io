@@ -5,10 +5,9 @@
 </a>
 <p></p>
 </div>
-![image](https://github.com/user-attachments/assets/b545c04a-8eac-4f69-b3d1-5af67d93de28)
-
 
 <div align="center">
+![image](https://github.com/user-attachments/assets/b545c04a-8eac-4f69-b3d1-5af67d93de28)
 
 ![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
