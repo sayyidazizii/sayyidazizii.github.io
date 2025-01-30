@@ -19,8 +19,6 @@ jobs:
           node-version: '18'
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
-      - name: Set Firebase Project
-        run: firebase use --add
       - name: Deploy to Firebase Hosting
         run: firebase deploy --only hosting --project sayyidazizii  # Tentukan proyek secara eksplisit
         env:
