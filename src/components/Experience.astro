@@ -7,89 +7,31 @@ const EXPERIENCIE = [
     date: "Jun 2023 - Now",
     title: "Junior Programmer",
     company: "Cipta Solutindo Tech",
-    description: "Junior Programmer, building web application based using Laravel, CodeIgniter, React JS, and creating APIs",
+    description: "Junior Programmer, building web applications based on Laravel, CodeIgniter, React JS, and creating APIs.",
     logo: "cipta.jpg"
   },
   {
     date: "Jun 2022 - Jun 2023",
     title: "Information Technology Staff",
     company: "SAS",
-    description: "Develop and maintenance desktop application base C# , Develop and maintenance web application Laravel, Epicor ERP , Maintenance Hardware",
+    description: "Develop and maintain desktop applications using C#, develop and maintain web applications using Laravel, Epicor ERP, and maintain hardware.",
     logo: "sas.jpg"
   },
   {
     date: "Des 2021 - Feb 2022",
     title: "Web Developer - Intern",
     company: "Kusuma Kreasi Utama",
-    description: "Build Website with Laravel",
+    description: "Build websites using Laravel.",
     logo: "kku.jpeg"
   }
 ];
-
-
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pengalaman dan Komunitas</title>
-  <style>
-    .experience-item {
-      border-bottom: 1px solid #eaeaea;
-      padding-bottom: 1rem;
-    }
-    .community-slider {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-    .slider-container {
-      display: flex;
-      width: 100%;
-      max-width: 1000px; /* Maksimum lebar untuk slider */
-      overflow: hidden;
-      position: relative;
-    }
-    .slider {
-      display: flex;
-      width: calc(100% * 2); /* Lebar slider yang 2x dari container untuk loop */
-      animation: slide 10s linear infinite; /* Animasi sliding */
-    }
-    .community-item {
-      flex: 0 0 auto; /* Memungkinkan item untuk memiliki lebar tetap */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 10px; /* Jarak antar item */
-    }
-    .community-logo {
-      width: 80px; /* Set width to 80px for small size */
-      height: 80px; /* Set height to 80px for small size */
-      object-fit: cover; /* Ensure image keeps its aspect ratio */
-      border-radius: 50%; /* Make image circular */
-      border: 2px solid #eaeaea; /* Optional: border for better visibility */
-    }
-    @keyframes slide {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
-</head>
-<body>
 
-  <ol class="relative mt-2">
-    {EXPERIENCIE.map((experiencie) => (
-      <li>
-        <ExperienceItem {...experiencie} />
-      </li>
+<div class="max-w-screen-lg mx-auto py-12">
+  <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Experience</h2>
+  <div class="space-y-8">
+    {EXPERIENCIE.map((experience) => (
+      <ExperienceItem {...experience} />
     ))}
-  </ol>
-
-
-</body>
-</html>
+  </div>
+</div>

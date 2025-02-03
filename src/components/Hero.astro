@@ -1,12 +1,12 @@
 ---
-const personalImageAlt = "Sayyid Aziz"
-import Badge from "@/components/Badge.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import SocialPill from "@/components/SocialPill.astro"
-import Instagram from "./icons/Instagram.astro"
-import GitHub from "@/components/icons/GitHub.astro"
-import CakeResume from "@/components/icons/CakeResume.astro"
+const personalImageAlt = "Sayyid Aziz";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import Instagram from "./icons/Instagram.astro";
+import GitHub from "@/components/icons/GitHub.astro";
+import CakeResume from "@/components/icons/CakeResume.astro";
 ---
 
 <style>
@@ -28,8 +28,7 @@ import CakeResume from "@/components/icons/CakeResume.astro"
 }
 </style>
 
-
-<div class="max-w-xl">
+<div class="max-w-xl mx-auto text-left">
   <div class="flex gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
@@ -54,21 +53,22 @@ import CakeResume from "@/components/icons/CakeResume.astro"
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
   </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-     <SocialPill href="https://www.instagram.com/sayyidazizii">
+  <nav class="flex flex-wrap gap-6 mt-8">
+     <SocialPill href="https://www.instagram.com/sayyidazizii" class="flex items-center gap-2">
       <Instagram class="size-4" />
+      <span class="text-lg font-medium">Instagram</span>
     </SocialPill>
-    <SocialPill href="mailto:sayyidsyafiq234@gmail.com">
-      <MailIcon class="size-4" />
-    </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/sayyid-aziz-52aaaa220/">
+    <SocialPill href="https://www.linkedin.com/in/sayyid-aziz-52aaaa220/" class="flex items-center gap-2">
       <LinkedInIcon class="size-4" />
+      <span class="text-lg font-medium">LinkedIn</span>
     </SocialPill> 
-    <SocialPill href="https://github.com/sayyidazizii/">
+    <SocialPill href="https://github.com/sayyidazizii/" class="flex items-center gap-2">
       <GitHub class="size-4" />
+      <span class="text-lg font-medium">GitHub</span>
     </SocialPill> 
-    <SocialPill href="https://www.cakeresume.com/sayyid-syafiq-abdul-aziz">
+    <SocialPill href="https://www.cakeresume.com/sayyid-syafiq-abdul-aziz" class="flex items-center gap-2">
       <CakeResume class="size-4" />
+      <span class="text-lg font-medium">CakeResume</span>
     </SocialPill>
   </nav>
 </div>
