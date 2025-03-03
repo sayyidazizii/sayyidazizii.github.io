@@ -1,17 +1,85 @@
 ---
 const personalImageAlt = "Sayyid Aziz";
+const name = "Sayyid Syafiq Abdul Aziz";
 ---
 
-<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-  <div class="order-2 md:order-1 w-full max-w-xl">
-    <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-      <p class="mb-4 text-pretty">
-        My name is <strong class="text-yellow-500 dark:text-yellow-100 font-normal font-mono">Sayyid Syafiq Abdul Aziz</strong>. I am passionate about technology and focused on mastering web and mobile app development. Currently, I am 21 years old.
-      </p>
+<script>
+  import Typewriter from "typewriter-effect/dist/core";
+  
+  function initTypingEffect() {
+    const typewriter = new Typewriter("#typing-text", {
+      loop: false,
+      delay: 50,
+    });
 
-      <p class="text-pretty">
-        I graduated from SMK N 2 Karanganyar, majoring in Software Engineering (2022), and I am currently pursuing my studies at Universitas Terbuka Surakarta in the Information Systems program. With a strong foundation in software development, I specialize in creating dynamic and responsive web and mobile applications. I am eager to contribute my skills to innovative projects and continuously grow in the tech industry.
-      </p>
+    typewriter
+      .typeString('<span style="color:#569cd6;">const</span> name = <span style="color:#ce9178;">"Sayyid Syafiq Abdul Aziz"</span>;')
+      .pauseFor(500)
+      .typeString('<br><span style="color:#569cd6;">console</span>.log(<span style="color:#dcdcaa;">`Hello, I am ${name}!`</span>);')
+      .pauseFor(1000) // Tunggu sebentar
+      .typeString('<br><br>// About Me')
+      .typeString('<br>I graduated from SMK N 2 Karanganyar, majoring in Software Engineering (2022).')
+      .typeString('<br>I am currently pursuing my studies at Universitas Terbuka Surakarta in the Information Systems program.')
+      .typeString('<br>With a strong foundation in software development, I specialize in creating dynamic and responsive web and mobile applications.')
+      .typeString('<br>I am eager to contribute my skills to innovative projects and continuously grow in the tech industry.')
+      .start();
+  }
+
+
+  window.addEventListener("load", () => {
+    setTimeout(initTypingEffect, 500);
+  });
+</script>
+
+<style>
+  .code-editor {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #333;
+  }
+
+  .code-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: #2d2d2d;
+    border-bottom: 2px solid #333;
+  }
+
+  .code-header .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+
+  .dot.red { background: #ff5f56; }
+  .dot.yellow { background: #ffbd2e; }
+  .dot.green { background: #27c93f; }
+
+  .code-content {
+    padding: 16px;
+    font-family: "Fira Code", monospace;
+    color: #d4d4d4;
+    font-size: 14px;
+    white-space: pre-wrap;
+    min-height: 80px;
+  }
+</style>
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
+  <div class="order-2 md:order-1 w-full max-w-xl">
+    <div class="code-editor">
+      <div class="code-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="code-content">
+        <p id="typing-text"></p> <!-- Ini akan diketik oleh Typewriter -->
+      </div>
     </div>
   </div>
 </article>
