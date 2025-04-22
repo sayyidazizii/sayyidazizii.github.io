@@ -3,7 +3,35 @@
   target="_blank"
   rel="noopener noreferrer"
   role="link"
-  class="flex items-center justify-start gap-2 px-4 py-2 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 group w-full hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black mb-2"
+  class="group block w-full p-4 mb-4 border rounded-xl bg-white dark:bg-gray-900 dark:border-gray-700 dark:text-white text-gray-900 shadow-md transition-all duration-300"
 >
-  <slot />
+  <div class="transition-all child-border">
+    <slot />
+  </div>
 </a>
+
+<style>
+@keyframes borderGlow {
+  0% {
+    border-color: #facc15;
+    background-color: rgba(250, 204, 21, 0.1); /* Glow effect on background */
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4);
+  }
+  50% {
+    border-color: #facc15;
+    background-color: rgba(250, 204, 21, 0.2); /* Increase background glow */
+    box-shadow: 0 0 10px 4px rgba(250, 204, 21, 0.5);
+  }
+  100% {
+    border-color: #facc15;
+    background-color: rgba(250, 204, 21, 0.1); /* Glow effect on background */
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4);
+  }
+}
+
+.group:hover .child-border {
+  animation: borderGlow 1.5s infinite;
+  border-color: #facc15;
+  background-color: rgba(250, 204, 21, 0.1); /* Background glow */
+}
+</style>
