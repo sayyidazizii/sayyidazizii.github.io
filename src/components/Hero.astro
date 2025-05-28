@@ -26,10 +26,31 @@ import CakeResume from "@/components/icons/CakeResume.astro";
   transform-origin: 70% 70%;
   animation: wave 2s infinite;
 }
+
+.icon-button {
+  @apply w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 transition hover:bg-gray-100 dark:hover:bg-gray-700;
+  position: relative;
+}
+
+.icon-button:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.tooltip {
+  @apply absolute bg-black text-white text-xs rounded px-2 py-1 transition-opacity duration-200;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
 </style>
 
-<div class="max-w-xl mx-auto text-left">
-  <div class="flex gap-4 mb-4">
+<div class="max-w-xl mx-auto text-center">
+  <div class="flex justify-center gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
       src="/profile.jpeg"
@@ -44,31 +65,27 @@ import CakeResume from "@/components/icons/CakeResume.astro";
       <Badge>Student & Programmer</Badge>
     </a>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
-  >
-    Hallo Everyone <span class="wave">👋</span> <br> I am Sayyid Aziz
+
+  <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+    Hallo Everyone <span class="wave">👋</span> <br> Reach me here
   </h1>
-  <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-  </p>
-  <nav class="flex flex-wrap gap-6 mt-8">
-     <SocialPill href="https://www.instagram.com/sayyidazizii" class="flex items-center gap-2">
-      <Instagram class="size-4" />
-      <span class="text-lg font-medium">Instagram</span>
-    </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/sayyidazizii/" class="flex items-center gap-2">
-      <LinkedInIcon class="size-4" />
-      <span class="text-lg font-medium">LinkedIn</span>
-    </SocialPill> 
-    <SocialPill href="https://github.com/sayyidazizii/" class="flex items-center gap-2">
-      <GitHub class="size-4" />
-      <span class="text-lg font-medium">GitHub</span>
-    </SocialPill> 
-    <SocialPill href="https://drive.google.com/file/d/1gogxCU6W5UuYK_Hkzh2TQPTaoogfa4Ix/view?usp=sharing" class="flex items-center gap-2">
-      <CakeResume class="size-4" />
-      <span class="text-lg font-medium">cv</span>
-    </SocialPill>
-  </nav>
+
+  <div class="mt-8 flex justify-center gap-6 flex-wrap">
+    <a href="https://www.instagram.com/sayyidazizii" class="icon-button" target="_blank" rel="noopener">
+      <Instagram class="size-5" />
+      <span class="tooltip">Instagram</span>
+    </a>
+    <a href="https://www.linkedin.com/in/sayyidazizii/" class="icon-button" target="_blank" rel="noopener">
+      <LinkedInIcon class="size-5" />
+      <span class="tooltip">LinkedIn</span>
+    </a>
+    <a href="https://github.com/sayyidazizii/" class="icon-button" target="_blank" rel="noopener">
+      <GitHub class="size-5" />
+      <span class="tooltip">GitHub</span>
+    </a>
+    <a href="https://drive.google.com/file/d/1gogxCU6W5UuYK_Hkzh2TQPTaoogfa4Ix/view?usp=sharing" class="icon-button" target="_blank" rel="noopener">
+      <CakeResume class="size-5" />
+      <span class="tooltip">CV</span>
+    </a>
+  </div>
 </div>
