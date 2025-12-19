@@ -20,7 +20,6 @@
         <nav class="nav">
           <a href="index.html">Home</a>
           <a href="blog.html">Blog</a>
-          <a href="index.html#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -65,6 +64,11 @@
       © 2026 sayyidazizii
       <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
     </footer>
+
+    <button id="scrollTopBtn" aria-label="Kembali ke atas">
+        <img src="assets/kunai.png" alt="Back to top">
+    </button>
+
     <script>
       function toggleTheme() {
         document.body.classList.toggle("dark");
@@ -77,6 +81,23 @@
       if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
       }
+
+      const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
   </body>
 </html>
