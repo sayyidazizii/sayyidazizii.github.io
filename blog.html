@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sayyidazizii - blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand"> <a href="index.html">sayyidazizii</a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-title">
+  <h1>📖 Blog</h1>
+  <p>Catatan belajar & kegiatan</p>
+</section>
+
+<div class="grid">
+  <div class="card">
+    <h3>Belajar HTML CSS JS PHP</h3>
+    <p>Catatan proses belajar web dari dasar sampai lanjut.</p>
+  </div>
+
+  <div class="card">
+    <h3>GDG Jogja 2023</h3>
+    <p>Pengalaman ikut Google Developer Group Jogja.</p>
+  </div>
+
+  <div class="card">
+    <h3>GDG Semarang 2024</h3>
+    <p>Belajar ekosistem Google dan networking.</p>
+  </div>
+
+  <div class="card">
+    <h3>Praktik Laravel di SMK</h3>
+    <p>Membuat aplikasi web Laravel sederhana.</p>
+  </div>
+</div>
+
+<footer>
+      © 2026 sayyidazizii
+      <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+</footer>
+<script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          document.body.classList.contains("dark") ? "dark" : "light"
+        );
+      }
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+      }
+    </script>
+
+
+</body>
+</html>
