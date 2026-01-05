@@ -220,7 +220,142 @@
         .social a:hover{
         transform:translateY(-4px);
         color:var(--primary);
-    }
+      }
+
+      .social-btn{
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--card);
+        color: var(--text);
+        overflow: hidden;
+        transition: .35s ease;
+      }
+
+
+      .social-btn svg{
+        z-index: 2;
+        transition: .35s ease;
+      }
+
+      .social-btn::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        padding:2px;
+        border-radius:50%;
+        background: var(--chakra);
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+                mask-composite: exclude;
+        animation: chakraPulse 2.6s ease-in-out infinite;
+        opacity:.85;
+        filter: blur(.2px);
+      }
+
+      @keyframes chakraPulse{
+        0%{
+          opacity:.45;
+          box-shadow: 0 0 6px transparent;
+        }
+        50%{
+          opacity:1;
+          box-shadow: 0 0 14px var(--chakra-glow);
+        }
+        100%{
+          opacity:.45;
+          box-shadow: 0 0 6px transparent;
+        }
+      }
+
+
+      .social-btn:hover{
+        transform: translateY(-6px) scale(1.06);
+      }
+
+      .social-btn:hover::before{
+        animation-duration: 1.6s;
+      }
+
+      .social-btn:hover svg{
+        transform: scale(1.12);
+      }
+
+
+      .social-btn.ig{
+        --chakra: linear-gradient(135deg,#ff7ad9,#8b5cf6);
+        --chakra-glow: rgba(168,85,247,.6);
+      }
+
+
+      .social-btn.github{
+        --chakra: linear-gradient(135deg,#d1d5db,#ffffff);
+        --chakra-glow: rgba(255,255,255,.55);
+      }
+
+      .social-btn.linkedin{
+        --chakra: linear-gradient(135deg,#60a5fa,#2563eb);
+        --chakra-glow: rgba(96,165,250,.6);
+      }
+
+
+
+      .social-btn.ig::before{
+        background: linear-gradient(
+          45deg,
+          #ff7ad9,
+          #8b5cf6,
+          #ff7ad9
+        );
+      }
+
+      .social-btn.ig:hover{
+        background: linear-gradient(135deg,#ff7ad9,#8b5cf6);
+        box-shadow: 0 0 18px rgba(255,122,217,.6);
+      }
+
+      .social-btn.github::before{
+        background: linear-gradient(
+          45deg,
+          #9ca3af,
+          #ffffff,
+          #9ca3af
+        );
+      }
+
+      .social-btn.github:hover{
+        background: linear-gradient(135deg,#1f2937,#374151);
+        box-shadow: 0 0 16px rgba(255,255,255,.35);
+      }
+
+      .social-btn.linkedin::before{
+        background: linear-gradient(
+          45deg,
+          #60a5fa,
+          #2563eb,
+          #60a5fa
+        );
+      }
+
+      .social-btn.linkedin:hover{
+        background: linear-gradient(135deg,#60a5fa,#2563eb);
+        box-shadow: 0 0 18px rgba(96,165,250,.6);
+      }
+
+      body.dark .social-btn{
+        background: rgba(255,255,255,0.05);
+      }
+
+      body.dark .social-btn::before{
+        opacity:.8;
+      }
+
 
 
       /* SECTION */
