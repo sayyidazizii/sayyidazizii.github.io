@@ -403,13 +403,39 @@ body.dark .spotify-modal {
   z-index: 1;
 }
 
+/* ═══════════════════════════════════════
+   FLOATING THEME TOGGLE
+═══════════════════════════════════════ */
+.theme-toggle-fab {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 500;
+  width: 50px;
+  height: 50px;
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 22px;
+}
+.theme-toggle-fab:hover {
+  transform: scale(1.1) rotate(12deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary);
+}
+body.dark .theme-toggle-fab {
+  background: rgba(255, 255, 255, 0.05);
+}
+
 /* ── FOOTER ── */
 footer { text-align: center; padding: 40px 0; color: var(--muted); border-top: 1px solid var(--border); }
-.theme-toggle {
-  margin-top: 14px; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 8px 16px; border-radius: 999px; background: var(--card);
-}
 
 /* ── SCROLL TO TOP ── */
 #scrollTopBtn {
@@ -459,4 +485,7 @@ body.dark #scrollTopBtn img { filter: drop-shadow(0 6px 14px rgba(255,255,255,.1
     bottom: 60px;
     left: 16px;
   }
-}
+  .theme-toggle-fab {
+    top: 85px;
+  }
+  }
